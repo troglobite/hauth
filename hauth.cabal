@@ -41,6 +41,7 @@ library
       aeson
     , base >=4.7 && <5
     , classy-prelude
+    , mtl
     , pcre-heavy
     , template-haskell
     , time
@@ -63,6 +64,7 @@ executable hauth-exe
     , base >=4.7 && <5
     , classy-prelude
     , hauth
+    , mtl
     , pcre-heavy
     , template-haskell
     , time
@@ -86,6 +88,7 @@ test-suite hauth-test
     , base >=4.7 && <5
     , classy-prelude
     , hauth
+    , mtl
     , pcre-heavy
     , template-haskell
     , time
