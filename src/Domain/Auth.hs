@@ -42,7 +42,7 @@ data RegistrationError
   deriving (Show, Eq)
 
 -- Email
-newtype Email = Email { emailRaw :: Text } deriving (Show, Eq)
+newtype Email = Email { emailRaw :: Text } deriving (Show, Eq, Ord)
 
 rawEmail :: Email -> Text
 rawEmail = emailRaw
