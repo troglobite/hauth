@@ -39,6 +39,7 @@ library
       QuasiQuotes
       ConstraintKinds
       FlexibleContexts
+      GeneralizedNewtypeDeriving
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
       aeson
@@ -47,6 +48,7 @@ library
     , data-has
     , mtl
     , pcre-heavy
+    , string-random
     , template-haskell
     , time
     , time-lens
@@ -64,6 +66,7 @@ executable hauth-exe
       QuasiQuotes
       ConstraintKinds
       FlexibleContexts
+      GeneralizedNewtypeDeriving
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       aeson
@@ -73,6 +76,7 @@ executable hauth-exe
     , hauth
     , mtl
     , pcre-heavy
+    , string-random
     , template-haskell
     , time
     , time-lens
@@ -91,6 +95,7 @@ test-suite hauth-test
       QuasiQuotes
       ConstraintKinds
       FlexibleContexts
+      GeneralizedNewtypeDeriving
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       aeson
@@ -100,6 +105,7 @@ test-suite hauth-test
     , hauth
     , mtl
     , pcre-heavy
+    , string-random
     , template-haskell
     , time
     , time-lens
